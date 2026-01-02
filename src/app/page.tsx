@@ -14,8 +14,8 @@ export default function Home() {
             </div> */}
             An aspiring Full Stack Developer, with 3+ years Experience in Game Development Industry.
           </div>
-          <div className="border-1 row-span-3 col-start-1 row-start-2">
-            <div className="flex justify-start align-center p-3 border-b-1">
+          <div className="border-1 row-span-3 col-start-1 row-start-2 overflow-hidden">
+            <div className="flex justify-start align-center p-3 border-b-1 ">
               <h1>Projects</h1>
             </div>
             <div className="flex flex-col p-2 overflow-y-auto max-h-full gap-1">
