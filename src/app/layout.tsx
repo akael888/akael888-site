@@ -21,7 +21,7 @@ const roboto_condensed = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Elgratio's Personal Website",
+  title: "Elgratio FC",
   description: "Contains Elgratio's Project and Experience History",
 };
 
