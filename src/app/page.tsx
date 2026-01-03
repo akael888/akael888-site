@@ -118,135 +118,137 @@ export default function Home() {
               /> */}
             </div>
           </div>
-          <div className="border-1 col-start-2 row-start-4">
-            <div className="flex justify-start items-center p-2 border-b-1 overflow-auto">
+          <div className="border-1 col-start-2 row-start-4 h-full flex flex-col">
+            <div className="flex justify-start items-center p-2 border-b-1 overflow-auto h-max">
               <h1 className="text-2xl font-bold">Skills</h1>
             </div>
-            <div className="w-full p-3 grid grid-cols-3 grid-row-2 gap-2 overflow-auto">
-              <div className="border-1 p-3 gap-1 flex flex-col">
-                <div>
-                  <p className="font-bold">Languages</p>
-                </div>
+            <div className="w-full grow shrink-0 overflow-hidden">
+              <div className="w-full h-full p-2 flex gap-2 overflow-x-auto ">
+                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                  <div>
+                    <p className="font-bold">Languages</p>
+                  </div>
 
-                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
-                  {/* <Image
+                  <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
+                    {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
                     width={25}
                     height={25}
                   /> */}
-                  <LogoIMGTemplate
-                    imgPath="/javascript-logo.svg"
-                    imgAlternative="Javascript Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="Javascript"
-                  />
-                  <LogoIMGTemplate
-                    imgPath="/python-logo.svg"
-                    imgAlternative="Python Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="Python"
-                  />
+                    <LogoIMGTemplate
+                      imgPath="/javascript-logo.svg"
+                      imgAlternative="Javascript Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="Javascript"
+                    />
+                    <LogoIMGTemplate
+                      imgPath="/python-logo.svg"
+                      imgAlternative="Python Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="Python"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="border-1 p-3 gap-1 flex flex-col">
-                <div>
-                  <p className="font-bold">Front End</p>
-                </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
-                  {/* <Image
+                <div className="w-[25%] h-full border-1 p-3 gap-1 flex flex-col  shrink-0">
+                  <div>
+                    <p className="font-bold">Front End</p>
+                  </div>
+                  <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
+                    {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
                     width={25}
                     height={25}
                   /> */}
-                  <LogoIMGTemplate
-                    imgPath="/react-logo.svg"
-                    imgAlternative="React JS Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="React JS"
-                  />
-                  <LogoIMGTemplate
-                    imgPath="/next.svg"
-                    imgAlternative="Next JS Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="Next JS"
-                  />
+                    <LogoIMGTemplate
+                      imgPath="/react-logo.svg"
+                      imgAlternative="React JS Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="React JS"
+                    />
+                    <LogoIMGTemplate
+                      imgPath="/next.svg"
+                      imgAlternative="Next JS Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="Next JS"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="border-1 p-3 gap-1 flex flex-col">
-                <div>
-                  <p className="font-bold">Back End</p>
-                </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
-                  {/* <Image
+                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                  <div>
+                    <p className="font-bold">Back End</p>
+                  </div>
+                  <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
+                    {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
                     width={25}
                     height={25}
                   /> */}
-                  <LogoIMGTemplate
-                    imgPath="/nodejs-logo.svg"
-                    imgAlternative="Node JS Logo"
-                    imgWidth={25}
-                    imgHeight={25}
-                    imgHoverText="Node JS"
-                  />
-                  <LogoIMGTemplate
-                    imgPath="/expressjs-logo.svg"
-                    imgAlternative="Express JS Logo"
-                    imgWidth={25}
-                    imgHeight={25}
-                    imgHoverText="Express JS"
-                  />
+                    <LogoIMGTemplate
+                      imgPath="/nodejs-logo.svg"
+                      imgAlternative="Node JS Logo"
+                      imgWidth={25}
+                      imgHeight={25}
+                      imgHoverText="Node JS"
+                    />
+                    <LogoIMGTemplate
+                      imgPath="/expressjs-logo.svg"
+                      imgAlternative="Express JS Logo"
+                      imgWidth={25}
+                      imgHeight={25}
+                      imgHoverText="Express JS"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="border-1 p-3 gap-1 flex flex-col">
-                <div>
-                  <p className="font-bold">Cloud</p>
-                </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit">
-                  {/* <Image
+                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                  <div>
+                    <p className="font-bold">Cloud</p>
+                  </div>
+                  <div className="grid grid-row-2 grid-cols-3 p-1 w-fit">
+                    {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
                     width={25}
                     height={25}
                   /> */}
-                  <LogoIMGTemplate
-                    imgPath="/vercel-logo.svg"
-                    imgAlternative="Vercel Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="Vercel"
-                  />
+                    <LogoIMGTemplate
+                      imgPath="/vercel-logo.svg"
+                      imgAlternative="Vercel Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="Vercel"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div className="border-1 p-3 gap-1 flex flex-col">
-                <div>
-                  <p className="font-bold">Databases</p>
-                </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
-                  {/* <Image
+                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                  <div>
+                    <p className="font-bold">Databases</p>
+                  </div>
+                  <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
+                    {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
                     width={25}
                     height={25}
                   /> */}
-                  <LogoIMGTemplate
-                    imgPath="/mongodb-logo.svg"
-                    imgAlternative="Mongo DB Logo"
-                    imgWidth={20}
-                    imgHeight={20}
-                    imgHoverText="MongoDB"
-                  />
+                    <LogoIMGTemplate
+                      imgPath="/mongodb-logo.svg"
+                      imgAlternative="Mongo DB Logo"
+                      imgWidth={20}
+                      imgHeight={20}
+                      imgHoverText="MongoDB"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
