@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LogoIMGTemplate from "./logo-image-template";
 
 interface ProjectCardProps {
   name: string;
@@ -43,7 +44,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="flex align-center p-2 w-[60%] gap-1">
               {techStacks.map((stack, index) => (
                 <div key={index} className="rounded-10 p-1 flex justify-center">
-                  <Image src={stack} alt="Stack Logo" width={30} height={30} />
+                  <LogoIMGTemplate
+                    imgPath={stack}
+                    imgAlternative="Stack Logo"
+                    imgWidth={30}
+                    imgHeight={30}
+                  />
                 </div>
               ))}
             </div>
