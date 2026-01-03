@@ -12,12 +12,12 @@ export default function Header() {
         </div>
         <nav className="flex w-full justify-end gap-5 w-[10%]">
           <div className="flex items-center">
-            <Link href="/" className="border-1 p-3">
+            <Link href="/" className="border-1 border-white hover:border-black p-3">
               Home
             </Link>
           </div>
           <div className="flex items-center">
-            <Link href="/blog" className="border-1 p-3">
+            <Link href="/blog" className="border-1 border-white hover:border-black p-3">
               Blog
             </Link>
           </div>
