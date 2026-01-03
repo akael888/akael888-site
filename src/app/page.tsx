@@ -50,7 +50,7 @@ export default function Home() {
                 duration="Jan 2022 - Oct 2022"
                 company="Touchten Games"
                 companyLink="www.linkedin.com/company/touchtengames"
-                details="Designed in-game Isometric Cutscene using in-house tools."
+                details="Designed in-game Isometric Cutscene using in-house tools for the game Piper's Pet Cafe"
               />
             </div>
           </div>
@@ -64,6 +64,7 @@ export default function Home() {
                 description="A Blogpost-style Portofolio Website that conveys how El developed his Projects"
                 logoUrl="/efc-logo.png"
                 techStacks={["/next.svg", "/tailwind-logo.svg"]}
+                appUrl="elgratiofc.vercel.app"
               />
               <ProjectCard
                 name="Sentence Repeater"
@@ -74,12 +75,14 @@ export default function Home() {
                   "/expressjs-logo.svg",
                   "/tailwind-logo.svg",
                 ]}
+                appUrl="sentence-repeater.vercel.app"
               />
               <ProjectCard
                 name="Piper's Pet Cafe"
                 description="A casual mobile game that blends card-based solitaire puzzles with a unique cafe renovation theme."
                 logoUrl="/ppc-logo.png"
                 techStacks={["/unity-icon.svg"]}
+                appUrl="apps.apple.com/ph/app/pipers-pet-cafe-solitaire/id1554300372"
               />
               {/* <ProjectCard
                 name="Test"

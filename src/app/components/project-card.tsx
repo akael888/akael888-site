@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
   name: string;
   description: string;
   logoUrl: string;
   techStacks?: string[];
+  appUrl?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -12,6 +14,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   logoUrl,
   techStacks = ["/next.svg"],
+  appUrl,
 }) => {
   return (
     <>
@@ -44,9 +47,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </div>
               ))}
             </div>
-            <div className="flex justify-end items-center">
-              <button className="border-1 w-[40%] p-1 hover:bg-gray-600">
-                OPEN
+            <div className="flex flex-row justify-end items-center gap-2">
+              {appUrl ? (
+                <Link
+                  className="border-1 w-[20%] p-1 hover:bg-gray-600 justify-center items-center flex"
+                  href={`https://${appUrl}`}
+                >
+                  App
+                </Link>
+              ) : null}
+              <button className="border-1 w-[20%] p-1 hover:bg-gray-600 justify-center items-center flex">
+                Blog
               </button>
             </div>
           </div>
