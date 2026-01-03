@@ -30,7 +30,7 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
 
           <div>
             {companyLink ? (
-              <Link href={`https://${companyLink}`}>{company}</Link>
+              <Link href={`https://${companyLink}`} className="italic font-bold hover:text-emerald-500">{company}</Link>
             ) : (
               <p className="italic">{company}</p>
             )}
