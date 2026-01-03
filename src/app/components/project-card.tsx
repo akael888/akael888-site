@@ -7,6 +7,7 @@ interface ProjectCardProps {
   description: string;
   logoUrl: string;
   techStacks?: string[];
+  techStacksHoverText?: string[];
   appUrl?: string;
 }
 
@@ -15,6 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   logoUrl,
   techStacks = ["/next.svg"],
+  techStacksHoverText = ["Hover Text"],
   appUrl,
 }) => {
   return (
@@ -49,6 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     imgAlternative="Stack Logo"
                     imgWidth={30}
                     imgHeight={30}
+                    imgHoverText={techStacksHoverText[index]}
                   />
                 </div>
               ))}
