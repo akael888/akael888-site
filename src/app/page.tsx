@@ -67,6 +67,7 @@ export default function Home() {
                 description="A Blogpost-style Personal Website that conveys how El developed his Projects"
                 logoUrl="/efc-logo.png"
                 techStacks={["/next.svg", "/tailwind-logo.svg"]}
+                techStacksHoverText={["Next JS", "Tailwind CSS"]}
                 appUrl="elgratiofc.vercel.app"
               />
               <ProjectCard
@@ -75,8 +76,15 @@ export default function Home() {
                 logoUrl="/sentence-rep-logo.png"
                 techStacks={[
                   "/react-logo.svg",
+                  "/nodejs-logo.svg",
                   "/expressjs-logo.svg",
                   "/tailwind-logo.svg",
+                ]}
+                techStacksHoverText={[
+                  "React JS",
+                  "Node JS",
+                  "Express JS",
+                  "Tailwind CSS",
                 ]}
                 appUrl="sentence-repeater.vercel.app"
               />
@@ -85,6 +93,7 @@ export default function Home() {
                 description="A casual mobile game that blends card-based solitaire puzzles with a unique cafe renovation theme."
                 logoUrl="/ppc-logo.png"
                 techStacks={["/unity-icon.svg"]}
+                techStacksHoverText={["Unity Engine"]}
                 appUrl="apps.apple.com/ph/app/pipers-pet-cafe-solitaire/id1554300372"
               />
               {/* <ProjectCard
@@ -119,7 +128,7 @@ export default function Home() {
                   <p className="font-bold">Languages</p>
                 </div>
 
-                <div className="grid grid-row-2 grid-cols-3 p-1 ">
+                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
                   {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
@@ -131,12 +140,14 @@ export default function Home() {
                     imgAlternative="Javascript Logo"
                     imgWidth={20}
                     imgHeight={20}
+                    imgHoverText="Javascript"
                   />
                   <LogoIMGTemplate
                     imgPath="/python-logo.svg"
                     imgAlternative="Python Logo"
                     imgWidth={20}
                     imgHeight={20}
+                    imgHoverText="Python"
                   />
                 </div>
               </div>
@@ -145,7 +156,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold">Front End</p>
                 </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1">
+                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
                   {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
@@ -157,12 +168,14 @@ export default function Home() {
                     imgAlternative="React JS Logo"
                     imgWidth={20}
                     imgHeight={20}
+                    imgHoverText="React JS"
                   />
                   <LogoIMGTemplate
                     imgPath="/next.svg"
                     imgAlternative="Next JS Logo"
                     imgWidth={20}
                     imgHeight={20}
+                    imgHoverText="Next JS"
                   />
                 </div>
               </div>
@@ -171,7 +184,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold">Back End</p>
                 </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1">
+                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
                   {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
@@ -183,12 +196,14 @@ export default function Home() {
                     imgAlternative="Node JS Logo"
                     imgWidth={25}
                     imgHeight={25}
+                    imgHoverText="Node JS"
                   />
                   <LogoIMGTemplate
                     imgPath="/expressjs-logo.svg"
                     imgAlternative="Express JS Logo"
                     imgWidth={25}
                     imgHeight={25}
+                    imgHoverText="Express JS"
                   />
                 </div>
               </div>
@@ -197,7 +212,7 @@ export default function Home() {
                 <div>
                   <p className="font-bold">Cloud</p>
                 </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1">
+                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit">
                   {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
@@ -205,25 +220,20 @@ export default function Home() {
                     height={25}
                   /> */}
                   <LogoIMGTemplate
-                    imgPath="/nodejs-logo.svg"
-                    imgAlternative="Node JS Logo"
+                    imgPath="/vercel-logo.svg"
+                    imgAlternative="Vercel Logo"
                     imgWidth={20}
                     imgHeight={20}
-                  />
-                  <LogoIMGTemplate
-                    imgPath="/expressjs-logo.svg"
-                    imgAlternative="Express JS Logo"
-                    imgWidth={20}
-                    imgHeight={20}
+                    imgHoverText="Vercel"
                   />
                 </div>
               </div>
 
-               <div className="border-1 p-3 gap-1 flex flex-col">
+              <div className="border-1 p-3 gap-1 flex flex-col">
                 <div>
                   <p className="font-bold">Databases</p>
                 </div>
-                <div className="grid grid-row-2 grid-cols-3 p-1">
+                <div className="grid grid-row-2 grid-cols-3 p-1 w-fit gap-2">
                   {/* <Image
                     src="/javascript-logo.svg"
                     alt="Github Logo"
@@ -231,16 +241,11 @@ export default function Home() {
                     height={25}
                   /> */}
                   <LogoIMGTemplate
-                    imgPath="/nodejs-logo.svg"
-                    imgAlternative="Node JS Logo"
+                    imgPath="/mongodb-logo.svg"
+                    imgAlternative="Mongo DB Logo"
                     imgWidth={20}
                     imgHeight={20}
-                  />
-                  <LogoIMGTemplate
-                    imgPath="/expressjs-logo.svg"
-                    imgAlternative="Express JS Logo"
-                    imgWidth={20}
-                    imgHeight={20}
+                    imgHoverText="MongoDB"
                   />
                 </div>
               </div>
