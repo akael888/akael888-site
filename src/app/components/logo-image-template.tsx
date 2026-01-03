@@ -6,6 +6,7 @@ interface LogoIMGTemplateProps {
   imgAlternative: string;
   imgWidth: number;
   imgHeight: number;
+  imgHoverText?: string;
 }
 
 const LogoIMGTemplate: React.FC<LogoIMGTemplateProps> = ({
@@ -13,16 +14,22 @@ const LogoIMGTemplate: React.FC<LogoIMGTemplateProps> = ({
   imgAlternative,
   imgWidth,
   imgHeight,
+  imgHoverText = "Hover Text",
 }) => {
   return (
     <>
-      <div className="bg-gray-100 p-1 w-fit rounded-10 flex justify-center items-center">
-        <Image
-          src={imgPath}
-          alt={imgAlternative}
-          width={imgWidth}
-          height={imgHeight}
-        />
+      <div className="group relative h-full w-full">
+        <div className="bg-gray-100 p-1 w-full h-full rounded-10 flex justify-center items-center">
+          <Image
+            src={imgPath}
+            alt={imgAlternative}
+            width={imgWidth}
+            height={imgHeight}
+          />
+        </div>
+        <div className="absolute hidden group-hover:block bg-black text-white p-1 top-10 left-1/2 -translate-x-1/2 w-max z-10">
+          <span>{imgHoverText}</span>
+        </div>
       </div>
     </>
   );
