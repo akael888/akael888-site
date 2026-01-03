@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <>
       <div>
-        <div className="border-1">
+        <div className="border-1 border-white hover:border-black">
           <div className="grid grid-row-2 grid-cols-3 p-2">
             <div className=" row-span-2 flex justify-center items-center p-2 ">
               <div className="w-fit border-1 p-2">
@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
 
             <div className="col-span-2 flex justify-start items-center">
-              <h1>{name}</h1>
+              <h1 className="text-xl font-bold">{name}</h1>
             </div>
             <div className="col-span-2 flex justify-start items-center">
               {description}
