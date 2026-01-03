@@ -4,14 +4,14 @@ interface ProjectCardProps {
   name: string;
   description: string;
   logoUrl: string;
-  techStacks?: string;
+  techStacks?: string[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
   logoUrl,
-  techStacks,
+  techStacks = ["/next.svg"],
 }) => {
   return (
     <>
@@ -36,13 +36,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               {description}
             </div>
           </div>
-          <div className="w-full p-3">
-            <button className="border-1 w-full p-1">OPEN</button>
-          </div>
-        </div>
-        <div className="flex justify-end align-center p-2">
-          <div className="border-1 rounded-10 p-1">
-            <Image src={logoUrl} alt="Linkedin Logo" width={30} height={30} />
+          <div className="w-full max-h-[100px] p-3 grid grid-row-1 grid-cols-2 justify-center">
+            <div className="flex align-center p-2 w-[60%] gap-1">
+              {techStacks.map((stack, index) => (
+                <div key={index} className="rounded-10 p-1 flex justify-center">
+                  <Image src={stack} alt="Stack Logo" width={30} height={30} />
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-end items-center">
+              <button className="border-1 w-[40%] p-1 hover:bg-gray-600">
+                OPEN
+              </button>
+            </div>
           </div>
         </div>
       </div>
