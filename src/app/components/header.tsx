@@ -5,7 +5,7 @@ export default function Header() {
     <>
       <header className="flex justify-start items-start p-5 h-[10%] bg-transparent text-black border-l-1 border-r-1 border-b-1">
         {/* Header */}
-        <div className="w-[80%] flex justify-start items-start h-full">
+        <div className="w-full flex justify-start items-center h-full">
           <strong>
             <h1 className="text-2xl font-bold">ELGRATIO F C</h1>
           </strong>

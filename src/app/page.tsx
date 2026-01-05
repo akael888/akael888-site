@@ -5,12 +5,15 @@ import WorkHistoryCard from "./components/work-card";
 import LogoIMGTemplate from "./components/logo-image-template";
 
 export default function Home() {
+
+  let skillsLogoSize = 40;
+
   return (
-    <div className="bg-white h-[90%] text-black flex flex-col">
+    <div className="bg-white h-fit text-black flex flex-col">
       <div className="border-l-1 border-r-1  border-black bg-grey-100 h-full w-full">
-        <div className=" grid grid-cols-2 grid-rows-4 gap-4 h-full w-full p-2">
+        <div className=" flex flex-col gap-4 h-full w-full p-2 overflow-auto">
           {/* CONTENT */}
-          <div className="border-1 w-full h-full">
+          <div className="border-1 w-full h-[90vh]">
             {/* <div className="flex justify-start align-center p-3 border-b-1">
               <h1>Summary</h1>
             </div> */}
@@ -22,42 +25,8 @@ export default function Home() {
                 with 3+ years Experience in Game Development Industry
               </p>
             </div>
-          </div>
-          <div className="border-1 row-span-3 col-start-1 row-start-2 overflow-hidden flex flex-col">
-            <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
-              <h1 className="text-2xl font-bold">Professional Experience</h1>
-            </div>
-            <div className="flex flex-col p-2 overflow-y-auto flex-1 gap-1">
-              <WorkHistoryCard
-                role="Project Coordinator"
-                duration="Jul 2025 - Aug 2025"
-                company="Script Smelter Studios"
-                details="Briefly worked closely with the CEO on several project initiatives"
-              />
-              <WorkHistoryCard
-                role="Mid Cutscene Designer"
-                duration="Mar 2023 - Feb 2025"
-                company="Tripledot Studios"
-                companyLink="www.linkedin.com/company/tripledot-studios"
-                details="Designed in-game Isometric Cutscene and assisted the direct Lead on managing internal team"
-              />
-              <WorkHistoryCard
-                role="Junior Cutscene Designer"
-                duration="Oct 2022 - Mar 2023"
-                company="Touchten Games"
-                companyLink="www.linkedin.com/company/touchtengames"
-                details="Further designed in-game Isometric Cutscene for Piper's Pet Cafe"
-              />
-              <WorkHistoryCard
-                role="Cutscene Designer Intern and Apprentice"
-                duration="Jan 2022 - Oct 2022"
-                company="Touchten Games"
-                companyLink="www.linkedin.com/company/touchtengames"
-                details="Designed in-game Isometric Cutscene using in-house tools for the game Piper's Pet Cafe"
-              />
-            </div>
-          </div>
-          <div className="border-1 row-span-3 col-start-2 row-start-1 overflow-hidden flex flex-col">
+          </div>{" "}
+          <div className="border-1 overflow-hidden flex flex-col">
             <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
               <h1 className="text-2xl font-bold">Projects</h1>
             </div>
@@ -118,13 +87,14 @@ export default function Home() {
               /> */}
             </div>
           </div>
-          <div className="border-1 col-start-2 row-start-4 h-full flex flex-col">
+        
+          <div className="border-1 h-full flex flex-col">
             <div className="flex justify-start items-center p-2 border-b-1 overflow-auto h-max">
               <h1 className="text-2xl font-bold">Skills</h1>
             </div>
-            <div className="w-full grow shrink-0 overflow-hidden">
-              <div className="w-full h-full p-2 flex gap-2 overflow-x-auto ">
-                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+            <div className="w-full grow shrink-0">
+              <div className="w-full h-full p-2 flex gap-2 grid grid-cols-2 grid-rows-2 ">
+                <div className="w-full border-1 p-3 gap-1 flex flex-col h-full shrink-0">
                   <div>
                     <p className="font-bold">Languages</p>
                   </div>
@@ -139,21 +109,21 @@ export default function Home() {
                     <LogoIMGTemplate
                       imgPath="/javascript-logo.svg"
                       imgAlternative="Javascript Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Javascript"
                     />
                     <LogoIMGTemplate
                       imgPath="/python-logo.svg"
                       imgAlternative="Python Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Python"
                     />
                   </div>
                 </div>
 
-                <div className="w-[25%] h-full border-1 p-3 gap-1 flex flex-col  shrink-0">
+                <div className="w-full h-full border-1 p-3 gap-1 flex flex-col shrink-0">
                   <div>
                     <p className="font-bold">Front End</p>
                   </div>
@@ -167,21 +137,21 @@ export default function Home() {
                     <LogoIMGTemplate
                       imgPath="/react-logo.svg"
                       imgAlternative="React JS Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="React JS"
                     />
                     <LogoIMGTemplate
                       imgPath="/next.svg"
                       imgAlternative="Next JS Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Next JS"
                     />
                   </div>
                 </div>
 
-                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                <div className="w-full border-1 p-3 gap-1 flex flex-col h-full shrink-0">
                   <div>
                     <p className="font-bold">Back End</p>
                   </div>
@@ -195,21 +165,21 @@ export default function Home() {
                     <LogoIMGTemplate
                       imgPath="/nodejs-logo.svg"
                       imgAlternative="Node JS Logo"
-                      imgWidth={25}
-                      imgHeight={25}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Node JS"
                     />
                     <LogoIMGTemplate
                       imgPath="/expressjs-logo.svg"
                       imgAlternative="Express JS Logo"
-                      imgWidth={25}
-                      imgHeight={25}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Express JS"
                     />
                   </div>
                 </div>
 
-                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                <div className="w-full border-1 p-3 gap-1 flex flex-col h-full shrink-0">
                   <div>
                     <p className="font-bold">Cloud</p>
                   </div>
@@ -223,14 +193,14 @@ export default function Home() {
                     <LogoIMGTemplate
                       imgPath="/vercel-logo.svg"
                       imgAlternative="Vercel Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="Vercel"
                     />
                   </div>
                 </div>
 
-                <div className="w-[25%] border-1 p-3 gap-1 flex flex-col h-full shrink-0">
+                <div className="w-full border-1 p-3 gap-1 flex flex-col h-full shrink-0">
                   <div>
                     <p className="font-bold">Databases</p>
                   </div>
@@ -244,13 +214,46 @@ export default function Home() {
                     <LogoIMGTemplate
                       imgPath="/mongodb-logo.svg"
                       imgAlternative="Mongo DB Logo"
-                      imgWidth={20}
-                      imgHeight={20}
+                      imgWidth={skillsLogoSize}
+                      imgHeight={skillsLogoSize}
                       imgHoverText="MongoDB"
                     />
                   </div>
                 </div>
               </div>
+            </div>
+          </div>  <div className="border-1 overflow-hidden flex flex-col">
+            <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
+              <h1 className="text-2xl font-bold">Professional Experience</h1>
+            </div>
+            <div className="flex flex-col p-2 overflow-y-auto flex-1 gap-1">
+              <WorkHistoryCard
+                role="Project Coordinator"
+                duration="Jul 2025 - Aug 2025"
+                company="Script Smelter Studios"
+                details="Briefly worked closely with the CEO on several project initiatives"
+              />
+              <WorkHistoryCard
+                role="Mid Cutscene Designer"
+                duration="Mar 2023 - Feb 2025"
+                company="Tripledot Studios"
+                companyLink="www.linkedin.com/company/tripledot-studios"
+                details="Designed in-game Isometric Cutscene and assisted the direct Lead on managing internal team"
+              />
+              <WorkHistoryCard
+                role="Junior Cutscene Designer"
+                duration="Oct 2022 - Mar 2023"
+                company="Touchten Games"
+                companyLink="www.linkedin.com/company/touchtengames"
+                details="Further designed in-game Isometric Cutscene for Piper's Pet Cafe"
+              />
+              <WorkHistoryCard
+                role="Cutscene Designer Intern and Apprentice"
+                duration="Jan 2022 - Oct 2022"
+                company="Touchten Games"
+                companyLink="www.linkedin.com/company/touchtengames"
+                details="Designed in-game Isometric Cutscene using in-house tools for the game Piper's Pet Cafe"
+              />
             </div>
           </div>
         </div>
