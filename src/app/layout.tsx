@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-white h-[100vh] md:pl-[20%] md:pr-[20%] ${roboto_condensed.variable} ${roboto_condensed.variable} antialiased`}
+        className={`bg-white h-full md:pl-[20%] md:pr-[20%] ${roboto_condensed.variable} ${roboto_condensed.variable} antialiased`}
       >
         <Header />
         {children}
