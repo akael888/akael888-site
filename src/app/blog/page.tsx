@@ -33,6 +33,8 @@ export default function blog({}) {
                 title="Piper's Pet Cafe"
                 description="PPC"
                 coverImagePath="/blog-img/PJ03/PJ03-logo.png"
+                type="Game Development"
+                typeColor="amber"
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
                 pinned={false}
