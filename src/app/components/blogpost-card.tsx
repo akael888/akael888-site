@@ -4,7 +4,7 @@ import Link from "next/link";
 interface BlogpostCardProps {
   title: string;
   description: string;
-  content: string;
+  content?: string;
   date?: string;
   type?: string;
   typeColor?: string;
@@ -19,7 +19,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
   description,
   content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis egestas lacus at consectetur. Cras venenatis aliquam erat vitae pharetra.",
   date = "22 December 2025",
-  type = "Web Development",
+  type = "Web Dev.",
   typeColor = "green",
   coverImagePath = "/blog-img/default/cover-default.png",
   pinnedImagePath = "/blog-img/default/pinned-default.png",
@@ -55,19 +55,25 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
           </div>
 
           <div className="grid grid-rows-3 grid-cols-2 w-full h-full row-span-2 gap-4 pl-2">
-            <div className="w-full col-span-full flex flex-col justify-center items-start">
+            <div
+              className={`w-full col-span-full flex flex-col justify-center items-start h-full ${
+                !pinned ? "row-span-2" : ""
+              }`}
+            >
               <h1 className="text-2xl font-bold">{title}</h1>
               <h1>{description}</h1>
             </div>
 
-            <div className="w-full row-start-2 col-span-full">
-              <h1>{content}..</h1>
-            </div>
+            {pinned ? (
+              <div className="w-full row-start-2 col-span-full">
+                <h1>{content}..</h1>
+              </div>
+            ) : null}
 
             <div className="row-start-3 flex justify-start items-center w-full h-full">
               <div className="p-1 w-fit text-sm whitespace-nowrap">
                 <div
-                  className={`p-1 bg-${typeColor}-700 w-fit rounded-md text-white italic`}
+                  className={`p-1 bg-black hover:bg-${typeColor}-700 w-fit rounded-md text-white italic`}
                 >
                   {type}
                 </div>
