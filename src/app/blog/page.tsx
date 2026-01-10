@@ -16,6 +16,7 @@ export default function blog({}) {
                 description="A CRA Post Mortem"
                 coverImagePath="/sentence-rep-logo.png"
                 pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
+                blogPath="/blog/sentence-repeater"
                 // imageContainerClassName="w-[50%] aspect-square"
                 pinned={true}
               />
@@ -24,6 +25,7 @@ export default function blog({}) {
                 title="Designing Blogpost-style Personal Wesbite"
                 description="An Attempt to Learn Next JS"
                 coverImagePath="/blog-img/PJ02/PJ02-logo.png"
+                blogPath="/blog/personal-site"
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
                 pinned={false}
@@ -36,6 +38,7 @@ export default function blog({}) {
                 pinnedImagePath="/blog-img/PJ03/PJ03-screenshot.png"
                 type="Game Dev."
                 typeColor="amber"
+                blogPath="/blog/pipers-pet-cafe"
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
                 pinned={true}
