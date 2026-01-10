@@ -65,9 +65,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   App
                 </Link>
               ) : null}
-              <button className="border-1 w-[20%] p-1 hover:bg-gray-600 justify-center items-center flex">
+              {/* <button className="border-1 w-[20%] p-1 hover:bg-gray-600 justify-center items-center flex">
                 Blog
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
