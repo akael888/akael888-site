@@ -22,7 +22,7 @@ export default function blog({}) {
 
               <BlogpostCard
                 title="Designing Blogpost-style Personal Wesbite"
-                description="A CRA Post Mortem"
+                description="An Attempt to Learn Next JS"
                 coverImagePath="/blog-img/PJ02/PJ02-logo.png"
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
@@ -30,14 +30,15 @@ export default function blog({}) {
               />
 
               <BlogpostCard
-                title="Piper's Pet Cafe"
-                description="PPC"
+                title="Crafting Isometric Cutscenes for a Story-Based Casual Game"
+                description="a Professional Endeavour for Piper's Pet Cafe"
                 coverImagePath="/blog-img/PJ03/PJ03-logo.png"
-                type="Game Development"
+                pinnedImagePath="/blog-img/PJ03/PJ03-screenshot.png"
+                type="Game Dev."
                 typeColor="amber"
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
-                pinned={false}
+                pinned={true}
               />
             </div>
           </div>
