@@ -4,6 +4,7 @@ import Link from "next/link";
 interface BlogpostCardProps {
   title: string;
   description: string;
+  blogPath: string;
   content?: string;
   date?: string;
   type?: string;
@@ -11,12 +12,14 @@ interface BlogpostCardProps {
   coverImagePath?: string;
   pinnedImagePath?: string;
   imageContainerClassName?: string;
+
   pinned?: boolean;
 }
 
 const BlogpostCard: React.FC<BlogpostCardProps> = ({
   title,
   description,
+  blogPath = "/",
   content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut facilisis egestas lacus at consectetur. Cras venenatis aliquam erat vitae pharetra.",
   date = "22 December 2025",
   type = "Web Dev.",
@@ -80,8 +83,11 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
               </div>
             </div>
 
-            <div className="w-full row-start-3 col-start-2 flex justify-end items-center">
-              <Link href="/" className="">
+            <div className="w-full h-full row-start-3 col-start-2 flex justify-end items-center">
+              <Link
+                href={blogPath}
+                className="border-1 border-white hover:border-black h-fit w-full flex items-center justify-end p-1"
+              >
                 Read
               </Link>
             </div>
