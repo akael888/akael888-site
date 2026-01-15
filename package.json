@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "next": "^16.1.1",
     "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react-dom": "^19.2.3",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
