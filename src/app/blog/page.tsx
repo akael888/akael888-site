@@ -24,6 +24,7 @@ export default function Page({}) {
                   // imageContainerClassName="w-[50%] aspect-square"
                   pinned={blogPost.data.pinned}
                   type={blogPost.data.type}
+                  content={blogPost.data.content}
                 />
               ))}
               {/* <BlogpostCard
