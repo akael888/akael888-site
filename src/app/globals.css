@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.no-tailwind {
+  /* Reset TailwindCSS */
+  all: revert; 
+}
+
+.no-tailwind * {
+  /* Reset TailwindCSS for Children */
+  all: revert;
+}

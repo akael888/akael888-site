@@ -1,7 +1,10 @@
 import Link from "next/link";
-import BlogpostCard from "../components/blogpost-card";
+import BlogpostCard from "../ui/blogpost/blogpost-card";
+import { fetchAllPosts } from "../lib/data";
 
-export default function blog({}) {
+const blogPostArray = await fetchAllPosts();
+
+export default function Page({}) {
   return (
     <div className="bg-white h-fit text-black flex flex-col min-h-screen">
       <div className="border-l-1 border-r-1  border-black bg-grey-100 h-full w-full">
@@ -11,7 +14,19 @@ export default function blog({}) {
               <h1 className="text-2xl font-bold">Recent Posts..</h1>
             </div>
             <div className="p-1 grid grid-cols-2 grid-rows-3 h-fit">
-              <BlogpostCard
+              {blogPostArray?.map((blogPost) => (
+                <BlogpostCard
+                  title={blogPost.data.title}
+                  description={blogPost.data.description}
+                  coverImagePath={blogPost.data.coverImgPath}
+                  pinnedImagePath={blogPost.data.pinnedImgPath}
+                  blogPath={blogPost.data.blogPath}
+                  // imageContainerClassName="w-[50%] aspect-square"
+                  pinned={blogPost.data.pinned}
+                  type={blogPost.data.type}
+                />
+              ))}
+              {/* <BlogpostCard
                 title="Building a Variable-Based String Iteration Tool"
                 description="A CRA Post Mortem"
                 coverImagePath="/sentence-rep-logo.png"
@@ -42,7 +57,7 @@ export default function blog({}) {
                 // pinnedImagePath="/blog-img/PJ01/PJ01-screenshot.png"
                 // imageContainerClassName="w-[50%] aspect-square"
                 pinned={true}
-              />
+              /> */}
             </div>
           </div>
         </div>

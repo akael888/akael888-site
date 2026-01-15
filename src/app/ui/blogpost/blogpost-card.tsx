@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BlogPostTypeChip from "./blogpost-type-chip";
 
 interface BlogpostCardProps {
   title: string;
@@ -74,13 +75,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
             ) : null}
 
             <div className="row-start-3 flex justify-start items-center w-full h-full">
-              <div className="p-1 w-fit text-sm whitespace-nowrap">
-                <div
-                  className={`p-1 bg-black hover:bg-${typeColor}-700 w-fit rounded-md text-white italic`}
-                >
-                  {type}
-                </div>
-              </div>
+              <BlogPostTypeChip blogType={type} />
             </div>
 
             <div className="w-full h-full row-start-3 col-start-2 flex justify-end items-center">

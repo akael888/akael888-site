@@ -1,26 +1,49 @@
+import { fetchPostBasedOnId } from "@/app/lib/data";
+import {
+  convertDateISOMetrictoDateName,
+  convertMarkdownToHTML,
+} from "@/app/lib/utils";
+import BlogPostTypeChip from "@/app/ui/blogpost/blogpost-type-chip";
+import { notFound } from "next/navigation";
+
 interface BlogPostProps {
   params: Promise<{ blogID: string }>;
 }
 
-export default async function BlogPost({ params }: BlogPostProps) {
+export default async function Page({ params }: BlogPostProps) {
   const { blogID } = await params;
 
-  const post = await getBlogPost(blogID);
+  const data = await fetchPostBasedOnId(blogID);
+  const post = data;
 
   if (!post) {
-    return <div className="border-1">Post not found</div>;
+    notFound();
   }
 
+  const parsedContent = await convertMarkdownToHTML(post.content);
+  const convertedDate = await convertDateISOMetrictoDateName(post.date);
+
   return (
-    <div className="h-screen border-1 border-black border-t-0">
-      <article className="h-full text-black p-1">
-        <h1>{post.title}</h1>
-        <p>{post.content}</p>
+    <div className="h-screen border-1 border-black border-t-0 p-2">
+      <article className="h-full text-black p-1 border-1">
+        <div className="p-2 flex flex-row gap-2 border-b-1">
+          <div className="w-[70%]">
+            <h1 className="text-2xl font-bold">{post.title}</h1>
+            <p>{post.description}</p>
+          </div>
+          <div className="w-[30%] flex flex-col justify-end items-end">
+            <p>{convertedDate}</p>
+            <BlogPostTypeChip blogType={post.type} />
+          </div>
+        </div>
+
+        <div className="p-2">
+          <div
+            className="no-tailwind"
+            dangerouslySetInnerHTML={{ __html: parsedContent }}
+          ></div>
+        </div>
       </article>
     </div>
   );
-}
-
-async function getBlogPost(blogID: string) {
-  return { title: `Post: ${blogID}`, content: "In Progress.." };
 }
