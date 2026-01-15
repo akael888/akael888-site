@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProjectCard from "./components/project-card";
-import WorkHistoryCard from "./components/work-card";
-import LogoIMGTemplate from "./components/logo-image-template";
+import ProjectCard from "./ui/home/project-card";
+import WorkHistoryCard from "./ui/home/work-card";
+import LogoIMGTemplate from "./ui/home/logo-image-template";
 
 export default function Home() {
 

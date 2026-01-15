@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { roboto_condensed } from "./font";
 import "./globals.css";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./ui/header";
+import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
   title: "Elgratio FC",
