@@ -44,3 +44,8 @@ body {
   height: auto;
   aspect-ratio: 1/1;
 }
+
+.no-tailwind * a {
+  /* Reset TailwindCSS for Children */
+  color: #0a0a0a;
+}
