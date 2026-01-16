@@ -7,12 +7,12 @@ type: Web Dev.
 id: personal-site
 blogPath: /blog/personal-site
 pinnedImgPath: null
-coverImgPath: /blog-img/PJ02/PJ02-logo.png
-pinned: false
+coverImgPath: null
+pinned: true
 imgColPath : /blog-img/PJ02/image-col
 ---
 
-I started this Project to Introduce myself to  Next JS, since I was already in the Polishing Stage of my other project : **[Sentence Repeater](https://sentence-repeater.vercel.app)**
+I started this Project to Introduce myself to  Next JS, since I was already in the Polishing Stage for my other project : **[Sentence Repeater](https://sentence-repeater.vercel.app)**
 <!-- 
 ![Elgratio F C Logo](/blog-img/PJ02/PJ02-logo.png "Personal Website Logo") -->
 
@@ -26,6 +26,6 @@ I designed this project based on several references listed here
 
 ### Conclusion
 Here's what I gained and learned from this Project:
-- The fundamentals of Next JS and how to implement them
-- Parsing Markdown using Remark, Grey-Matter and Remark HTML Plugin
-- Solidify my knowledge with Tailwind CSS
+- The fundamentals of **Next JS** and how to implement them
+- Parsing **Markdown** using **Remark**, **Grey-Matter** and **Remark HTML Plugin**
+- Solidify my knowledge with **Tailwind CSS**

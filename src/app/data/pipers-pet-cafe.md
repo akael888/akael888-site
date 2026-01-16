@@ -6,15 +6,17 @@ author: Elgratio
 type: Game Dev.
 id: pipers-pet-cafe
 blogPath: /blog/pipers-pet-cafe
-pinnedImgPath : /blog-img/PJ03/PJ03-screenshot.png
-coverImgPath : /blog-img/PJ03/PJ03-logo.png
-pinned : true
-imgColPath : /blog-img/PJ03/image-col
+pinnedImgPath: /blog-img/PJ03/PJ03-screenshot.png
+coverImgPath: /blog-img/PJ03/PJ03-logo.png
+pinned: true
+imgColPath: /blog-img/PJ03/image-col
 ---
-This project is related to my employement in **[Touchten Games](https://www.linkedin.com/company/touchtengames)** and **[Tripledot Studios](https://www.linkedin.com/company/tripledot-studios)**.
 
-I designed over 20+ Isometric Cutscenes using in-house tool in Unity Engine.
+This project is related to my employment in Touchten Games (Jan 2022 - Mar 2023) and Tripledot Studios (Mar 2023 - Feb 2025)
 
-<video src="https://youtu.be/IqCe0QRbRHo?si=gUAwvjBAZk_siItp" controls width="600">
-    Your browser does not support the video tag.
-</video>
+I designed over **20+ Isometric Cutscenes** for a casual mobile game called **[Piper's Pet Cafe](https://apps.apple.com/si/app/pipers-pet-cafe-solitaire/id1554300372)** using in-house tool in **Unity Engine**.
+
+Few Examples of my Work :
+
+- **[CH1Q11 - Install Jukebox Cover](https://youtu.be/0pAIVeJXjEM?si=KQ0_W4tIzrMlQ8R_&t=1256)**
+- **[CH35Q0 - Intro](https://youtu.be/sCbFdF9vw9Q?si=wLe1wYrWcZto-d7Z&t=80)**
