@@ -70,7 +70,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
 
             {pinned ? (
               <div className="w-full row-start-2 col-span-full">
-                <h1>{content}..</h1>
+                <h1>{content.substring(0,100)}..</h1>
               </div>
             ) : null}
 
