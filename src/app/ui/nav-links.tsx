@@ -16,15 +16,14 @@ export default function NavLinks() {
       {links.map((link) => {
         const isActive = link.href == pathname;
         return (
-          <div className="flex items-center">
+          <div className="flex items-center" key={link.name}>
             <Link
-              key={link.name}
               href={link.href}
               className={clsx("border-1 border-white p-3", {
-                "bg-black text-white pointer-events-none cursor-not-allowed": isActive,
+                "bg-black text-white pointer-events-none cursor-not-allowed":
+                  isActive,
                 "hover:border-black": !isActive,
               })}
-              
             >
               {link.name}
             </Link>

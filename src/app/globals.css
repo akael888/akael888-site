@@ -27,10 +27,25 @@ body {
 
 .no-tailwind {
   /* Reset TailwindCSS */
-  all: revert; 
+  all: revert;
+  min-height: 100vh;
+  max-height: fit-content;
 }
 
 .no-tailwind * {
   /* Reset TailwindCSS for Children */
   all: revert;
+}
+
+.no-tailwind * img {
+  /* Reset TailwindCSS for Children */
+  float: left;
+  width: 30vw;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.no-tailwind * a {
+  /* Reset TailwindCSS for Children */
+  color: #0a0a0a;
 }

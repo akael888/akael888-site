@@ -1,8 +1,9 @@
 import Link from "next/link";
 import BlogpostCard from "../ui/blogpost/blogpost-card";
-import { fetchAllPosts } from "../lib/data";
 
-const blogPostArray = await fetchAllPosts();
+import { sortBlogpost } from "../lib/utils";
+
+const blogPostArray = await sortBlogpost(false);
 
 export default function Page({}) {
   return (
@@ -16,6 +17,7 @@ export default function Page({}) {
             <div className="p-1 grid grid-cols-2 grid-rows-3 h-fit">
               {blogPostArray?.map((blogPost) => (
                 <BlogpostCard
+                  key={blogPost.data.id}
                   title={blogPost.data.title}
                   description={blogPost.data.description}
                   coverImagePath={blogPost.data.coverImgPath}
@@ -24,7 +26,7 @@ export default function Page({}) {
                   // imageContainerClassName="w-[50%] aspect-square"
                   pinned={blogPost.data.pinned}
                   type={blogPost.data.type}
-                  content={blogPost.data.content}
+                  content={blogPost.content}
                 />
               ))}
               {/* <BlogpostCard

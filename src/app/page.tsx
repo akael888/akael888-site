@@ -5,7 +5,6 @@ import WorkHistoryCard from "./ui/home/work-card";
 import LogoIMGTemplate from "./ui/home/logo-image-template";
 
 export default function Home() {
-
   let skillsLogoSize = 40;
 
   return (
@@ -37,7 +36,8 @@ export default function Home() {
                 logoUrl="/efc-logo.png"
                 techStacks={["/next.svg", "/tailwind-logo.svg"]}
                 techStacksHoverText={["Next JS", "Tailwind CSS"]}
-                appUrl="elgratiofc.vercel.app"
+                // appUrl="elgratiofc.vercel.app"
+                blogUrl="/blog/personal-site"
               />
               <ProjectCard
                 name="Sentence Repeater"
@@ -48,14 +48,17 @@ export default function Home() {
                   "/nodejs-logo.svg",
                   "/expressjs-logo.svg",
                   "/tailwind-logo.svg",
+                  "/mongodb-logo.svg",
                 ]}
                 techStacksHoverText={[
                   "React JS",
                   "Node JS",
                   "Express JS",
                   "Tailwind CSS",
+                  "MongoDB",
                 ]}
                 appUrl="sentence-repeater.vercel.app"
+                blogUrl="/blog/sentence-repeater"
               />
               <ProjectCard
                 name="Piper's Pet Cafe"
@@ -64,6 +67,7 @@ export default function Home() {
                 techStacks={["/unity-icon.svg"]}
                 techStacksHoverText={["Unity Engine"]}
                 appUrl="apps.apple.com/ph/app/pipers-pet-cafe-solitaire/id1554300372"
+                blogUrl="/blog/pipers-pet-cafe"
               />
               {/* <ProjectCard
                 name="Test"
@@ -87,7 +91,6 @@ export default function Home() {
               /> */}
             </div>
           </div>
-        
           <div className="border-1 h-full flex flex-col">
             <div className="flex justify-start items-center p-2 border-b-1 overflow-auto h-max">
               <h1 className="text-2xl font-bold">Skills</h1>
@@ -222,7 +225,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>  <div className="border-1 overflow-hidden flex flex-col">
+          </div>{" "}
+          <div className="border-1 overflow-hidden flex flex-col">
             <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
               <h1 className="text-2xl font-bold">Professional Experience</h1>
             </div>

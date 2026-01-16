@@ -37,8 +37,8 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
           pinned ? "col-span-full" : null
         }`}
       >
-        <div className="h-full grid grid-cols-3 grid-rows-2 w-full">
-          <div className="w-full h-full flex justify-center items-center row-span-2 p-2 col-span-2 ">
+        <div className="md:h-full h-fit md:grid md:grid-cols-3 md:grid-rows-2 flex flex-col w-full">
+          <div className="w-full md:h-full h-fit flex justify-center items-center row-span-2 p-2 col-span-2 ">
             <div
               className={`relative mt-2 ${
                 imageContainerClassName
@@ -60,7 +60,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
 
           <div className="grid grid-rows-3 grid-cols-2 w-full h-full row-span-2 gap-4 pl-2">
             <div
-              className={`w-full col-span-full flex flex-col justify-center items-start h-full ${
+              className={`w-full col-span-full flex flex-col justify-center items-start md:h-full h-fit ${
                 !pinned ? "row-span-2" : ""
               }`}
             >
@@ -70,7 +70,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
 
             {pinned ? (
               <div className="w-full row-start-2 col-span-full">
-                <h1>{content}..</h1>
+                <h1>{content.substring(0,100)}..</h1>
               </div>
             ) : null}
 
@@ -81,7 +81,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
             <div className="w-full h-full row-start-3 col-start-2 flex justify-end items-center">
               <Link
                 href={blogPath}
-                className="border-1 border-white hover:border-black h-fit w-full flex items-center justify-end p-1"
+                className="border-1 border-white hover:border-black h-fit w-fit flex items-center justify-end p-1"
               >
                 Read
               </Link>

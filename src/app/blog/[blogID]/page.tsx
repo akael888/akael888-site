@@ -1,9 +1,13 @@
-import { fetchPostBasedOnId } from "@/app/lib/data";
+import {
+  fetchPostBasedOnId,
+  getAllImageCollectionByBlog,
+} from "@/app/lib/data";
 import {
   convertDateISOMetrictoDateName,
   convertMarkdownToHTML,
 } from "@/app/lib/utils";
 import BlogPostTypeChip from "@/app/ui/blogpost/blogpost-type-chip";
+import ImageCarousel from "@/app/ui/blogpost/image-carousel";
 import { notFound } from "next/navigation";
 
 interface BlogPostProps {
@@ -22,9 +26,12 @@ export default async function Page({ params }: BlogPostProps) {
 
   const parsedContent = await convertMarkdownToHTML(post.content);
   const convertedDate = await convertDateISOMetrictoDateName(post.date);
+  const imageCollectionPaths = await getAllImageCollectionByBlog(
+    post.imgColPath
+  );
 
   return (
-    <div className="h-screen border-1 border-black border-t-0 p-2">
+    <div className="min-h-screen h-fit border-1 border-black border-t-0 p-2">
       <article className="h-full text-black p-1 border-1">
         <div className="p-2 flex flex-row gap-2 border-b-1">
           <div className="w-[70%]">
@@ -37,7 +44,14 @@ export default async function Page({ params }: BlogPostProps) {
           </div>
         </div>
 
-        <div className="p-2">
+        <div className="w-full p-2">
+          <div className="w-full max-h-[10%] flex flex-row gap-2 overflow-y-auto">
+            <ImageCarousel imageCollectionPaths={imageCollectionPaths} />
+
+            {/* <img src="/ppc-logo.png" alt="" className="w-full" />
+            <img src="/ppc-logo.png" alt="" className="w-full" />
+            <img src="/ppc-logo.png" alt="" className="w-full" /> */}
+          </div>
           <div
             className="no-tailwind"
             dangerouslySetInnerHTML={{ __html: parsedContent }}
