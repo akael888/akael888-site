@@ -16,6 +16,10 @@ I started this Project to Introduce myself to  Next JS, since I was already in t
 <!-- 
 ![Elgratio F C Logo](/blog-img/PJ02/PJ02-logo.png "Personal Website Logo") -->
 
+I used Markdown to store the blog data and convert it to HTML using Grey-Matter and Remark
+
+The reason for this is to improve efficiency when handling new Blogpost. I could easily write down a Markdown anywhere and anytime, and the site will handle all of the conversion.
+
 I designed this project based on several references listed here
 - **[Mcloughlan.com](https://mcloughlan.com)** (Blogpost Style)
 - **[George Christeas's Personal Website](https://chr-ge.com)** (Visual References)
