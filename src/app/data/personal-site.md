@@ -6,8 +6,8 @@ author: Elgratio
 type: Web Dev.
 id: personal-site
 blogPath: /blog/personal-site
-pinnedImgPath: null
-coverImgPath: null
+pinnedImgPath: /blog-img/PJ02/PJ02-screenshot.png
+coverImgPath: /blog-img/PJ02/PJ02-logo.png
 pinned: true
 imgColPath : /blog-img/PJ02/image-col
 ---
