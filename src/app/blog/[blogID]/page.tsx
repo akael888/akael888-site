@@ -7,6 +7,7 @@ import {
   convertMarkdownToHTML,
 } from "@/app/lib/utils";
 import BlogPostTypeChip from "@/app/ui/blogpost/blogpost-type-chip";
+import ImageCarousel from "@/app/ui/blogpost/image-carousel";
 import { notFound } from "next/navigation";
 
 interface BlogPostProps {
@@ -45,9 +46,7 @@ export default async function Page({ params }: BlogPostProps) {
 
         <div className="w-full p-2">
           <div className="w-full max-h-[10%] flex flex-row gap-2 overflow-y-auto">
-            {imageCollectionPaths?.map((path) => (
-                <img src={path} alt="" className="w-full max-h-full" />
-            ))}
+            <ImageCarousel imageCollectionPaths={imageCollectionPaths} />
 
             {/* <img src="/ppc-logo.png" alt="" className="w-full" />
             <img src="/ppc-logo.png" alt="" className="w-full" />
