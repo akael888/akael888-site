@@ -17,7 +17,7 @@ export default function ImageCarousel({
 
   return (
     <>
-      {imageCollectionPaths ? (
+      {images ? (
         <div className="max-w-full m-auto">
           <Carousel showArrows={true} infiniteLoop={true} autoPlay={true}>
             {images.map((image, index) => (
