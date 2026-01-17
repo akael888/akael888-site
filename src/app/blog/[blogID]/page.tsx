@@ -26,10 +26,11 @@ export default async function Page({ params }: BlogPostProps) {
 
   const parsedContent = await convertMarkdownToHTML(post.content);
   const convertedDate = await convertDateISOMetrictoDateName(post.date);
-  const imageCollectionPaths = await getAllImageCollectionByBlog(
-    post.imgColPath
-  );
 
+  const imageCollectionPaths = post.imgColPath
+    ? await getAllImageCollectionByBlog(post.imgColPath)
+    : null;
+    
   return (
     <div className="min-h-screen h-fit border-1 border-border border-t-0 p-2 bg-bg text-text">
       <article className="h-full p-1 border-1 border-border">
@@ -46,7 +47,9 @@ export default async function Page({ params }: BlogPostProps) {
 
         <div className="w-full p-2">
           <div className="w-full max-h-[10%] flex flex-row gap-2 overflow-y-auto">
-            <ImageCarousel imageCollectionPaths={imageCollectionPaths} />
+            {imageCollectionPaths ? (
+              <ImageCarousel imageCollectionPaths={imageCollectionPaths} />
+            ) : null}
 
             {/* <img src="/ppc-logo.png" alt="" className="w-full" />
             <img src="/ppc-logo.png" alt="" className="w-full" />

@@ -9,9 +9,9 @@ interface BlogpostCardProps {
   title: string;
   description: string;
   blogPath: string;
-  content?: string;
+  content: string;
   date?: string;
-  type?: string;
+  type: string;
   typeColor?: string;
   coverImagePath?: string;
   pinnedImagePath?: string;
@@ -53,8 +53,8 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
                 imageContainerClassName
                   ? imageContainerClassName
                   : pinned
-                  ? "w-full aspect-video"
-                  : "w-full aspect-square"
+                    ? "w-full aspect-video"
+                    : "w-full aspect-square"
               }`}
             >
               <Image
