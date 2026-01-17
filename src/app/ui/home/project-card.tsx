@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 interface ProjectCardProps {
   name: string;
   description: string;
-  logoUrl: string;
+  logoUrl?: string;
   techStacks: { imagePath: string; imageHoverText: string }[];
   appUrl?: string;
   blogUrl?: string;
@@ -17,7 +17,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   name,
   description,
-  logoUrl,
+  logoUrl = "/no-img-provided.png",
   techStacks,
   appUrl,
   blogUrl,
@@ -76,12 +76,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 App
               </Link>
             ) : null}
-            <Link
-              className="border-1 min-w-[20%] p-1 hover:border-border border-bg justify-center items-center flex underline italic"
-              href={`${blogUrl}`}
-            >
-              Blogpost
-            </Link>
+            {blogUrl ? (
+              <Link
+                className="border-1 min-w-[20%] p-1 hover:border-border border-bg justify-center items-center flex underline italic"
+                href={`${blogUrl}`}
+              >
+                Blogpost
+              </Link>
+            ) : null}
           </div>
         </div>
       </motion.div>
