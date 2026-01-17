@@ -1,6 +1,7 @@
 import Link from "next/link";
-import NavLinks from "./nav-links";
 import DarkModeButton from "./header/darkmode-button";
+import NavLinks from "./header/nav-links";
+import NavDropDown from "./header/nav-dropdown";
 
 export default function Header() {
   return (
@@ -13,9 +14,9 @@ export default function Header() {
           </strong>
         </div>
 
-        <nav className="flex w-full items-center justify-end gap-5 w-[10%]">
+        <nav className="flex w-full items-center justify-end gap-2 w-[10%]">
           <DarkModeButton />
-          <NavLinks />
+          <NavDropDown/>
         </nav>
       </header>
     </>
