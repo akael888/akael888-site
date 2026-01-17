@@ -10,9 +10,9 @@ export default function SkillsSection({}) {
   return (
     <>
       <motion.div
-        className="border-1 h-full flex flex-col"
+        className="border-1 h-full flex flex-col overflow-hidden"
         initial={{ opacity: 0 }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >

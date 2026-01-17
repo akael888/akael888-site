@@ -13,7 +13,7 @@ export default function BlogSection({
       <motion.div
         className="flex flex-col gap-4 p-4 h-full w-full"
         initial={{ opacity: 0 }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
@@ -21,7 +21,7 @@ export default function BlogSection({
           <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
             <h1 className="text-2xl font-bold">Recent Post</h1>
           </div>
-          <div className="p-1 grid grid-cols-2 grid-rows-3 h-fit">
+          <div className="p-1 flex-row h-fit gap-2">
             {children}
           </div>
         </div>

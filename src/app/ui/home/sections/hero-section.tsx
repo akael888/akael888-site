@@ -8,7 +8,7 @@ export default function HeroSection({}) {
       <motion.div
         className="border-1 w-full h-[90vh]"
         initial={{ opacity: 0 }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
       >
         <div className="flex  flex-col p-1 justify-end align-end p-5">

@@ -10,7 +10,7 @@ export default function ProjectSection({}) {
       <motion.div
         className="border-1 overflow-hidden flex flex-col "
         initial={{ opacity: 0 }}
-        transition={{ ease: "easeIn", duration: 1 }}
+        transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
