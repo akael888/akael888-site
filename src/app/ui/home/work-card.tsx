@@ -1,3 +1,4 @@
+import { motion } from "motion/react";
 import Link from "next/link";
 
 interface WorkHistoryCardProps {
@@ -17,7 +18,13 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
 }) => {
   return (
     <>
-      <div className="border-1 hover:border-black border-white flex w-full">
+      <motion.div
+        className="border-1 hover:border-black border-white flex w-full"
+        initial={{ opacity: 0, x: 20 }}
+        transition={{ ease: "easeIn", duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="p-2 w-full flex flex-col gap-2">
           <div>
             <div>
@@ -30,7 +37,12 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
 
           <div>
             {companyLink ? (
-              <Link href={`https://${companyLink}`} className="italic font-bold hover:text-emerald-500">{company}</Link>
+              <Link
+                href={`https://${companyLink}`}
+                className="italic font-bold hover:text-emerald-500"
+              >
+                {company}
+              </Link>
             ) : (
               <p className="italic">{company}</p>
             )}
@@ -44,7 +56,7 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
         {/* <div className="w-[10%] flex justify-center items-center">
           <div className="bg-black rounded-full border-1 w-[10px] h-[10px]"></div>
         </div> */}
-      </div>
+      </motion.div>
     </>
   );
 };
