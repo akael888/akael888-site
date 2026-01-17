@@ -14,7 +14,18 @@ export default function DarkModeButton({}) {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="h-full w-fit">
+        <div className="p-2">
+          <Image
+            src="/light-mode.svg"
+            alt="Light Mode Logo"
+            width={25}
+            height={25}
+          />
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -26,7 +37,7 @@ export default function DarkModeButton({}) {
             setTheme(theme === "dark" ? "light" : "dark");
           }}
         >
-          <AnimatePresence mode="wait" initial={false}>
+          <AnimatePresence mode="wait" initial={true}>
             {theme === "dark" ? (
               <>
                 <motion.div
@@ -47,8 +58,8 @@ export default function DarkModeButton({}) {
               <>
                 <motion.div
                   key="light"
-                  initial={{ x: 10 }}
-                  animate={{ x: 0 }}
+                  initial={{ opacity: 0, x: 10 }}
+                  animate={{ opacity: 1, x: 0 }}
                   exit={{ x: 10 }}
                 >
                   <Image
