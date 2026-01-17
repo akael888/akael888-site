@@ -11,10 +11,9 @@ Link : [elgratiofc.vercel.app](https://elgratiofc.vercel.app)
 
 - Grey Matter
 - Remark and Remark HTML
-
+- Framer Motion
+- CLSX
 
 ## Main Features
 - Parsing Blogpost Data from Markdown Files (Using Grey Matter and Remark)
 - Dark Mode
-
-To be added...
