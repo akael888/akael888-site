@@ -3,6 +3,7 @@ import { roboto_condensed } from "./font";
 import "./globals.css";
 import Header from "./ui/header";
 import Footer from "./ui/footer";
+import { ThemeProvider } from "./ui/theme-provide";
 
 export const metadata: Metadata = {
   title: "Elgratio FC",
@@ -15,13 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`bg-white h-full md:pl-[20%] md:pr-[20%] ${roboto_condensed.variable} ${roboto_condensed.variable} antialiased`}
+        className={`bg-bg h-full lg:pl-[20%] lg:pr-[20%] ${roboto_condensed.variable} ${roboto_condensed.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer/>
+        <ThemeProvider
+          attribute="data-theme"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
