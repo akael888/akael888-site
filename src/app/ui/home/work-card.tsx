@@ -19,7 +19,7 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
   return (
     <>
       <motion.div
-        className="border-1 hover:border-black border-white flex w-full"
+        className=" flex w-full"
         initial={{ opacity: 0, x: 20 }}
         transition={{ ease: "easeIn", duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -39,7 +39,7 @@ const WorkHistoryCard: React.FC<WorkHistoryCardProps> = ({
             {companyLink ? (
               <Link
                 href={`https://${companyLink}`}
-                className="italic font-bold hover:text-emerald-500"
+                className="italic font-bold hover:text-gray-500 underline"
               >
                 {company}
               </Link>
