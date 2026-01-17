@@ -67,20 +67,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               </div>
             ))}
           </div>
-          <div className="flex flex-row justify-end items-center gap-2">
+          <div className="flex flex-row md:justify-end justify-around items-center gap-2">
             {appUrl ? (
               <Link
-                className="border-1 w-[20%] p-1 hover:border-black border-white justify-center items-center flex"
+                className="border-1 min-w-[20%] p-1 hover:border-black border-white justify-center items-center flex underline italic"
                 href={`https://${appUrl}`}
               >
                 App
               </Link>
             ) : null}
             <Link
-              className="border-1 w-[20%] p-1 hover:border-black border-white justify-center items-center flex"
+              className="border-1 min-w-[20%] p-1 hover:border-black border-white justify-center items-center flex underline italic"
               href={`${blogUrl}`}
             >
-              Blog
+              Blogpost
             </Link>
           </div>
         </div>
