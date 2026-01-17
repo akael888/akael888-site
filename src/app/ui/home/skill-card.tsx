@@ -17,7 +17,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillTitle, skillLogoData }) => {
   return (
     <>
       <motion.div
-        className="w-full border-1 p-3 gap-1 flex flex-col h-full shrink-0"
+        className="w-full border-1 border-border p-3 gap-1 flex flex-col h-full shrink-0"
         initial={{ opacity: 0, y: 20 }}
         transition={{ ease: "easeIn", duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}

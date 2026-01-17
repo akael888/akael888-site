@@ -6,7 +6,7 @@ export default function HeroSection({}) {
   return (
     <>
       <motion.div
-        className="border-1 w-full h-[90vh]"
+        className="border-1 border-border w-full h-[90vh]"
         initial={{ opacity: 0 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}

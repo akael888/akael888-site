@@ -7,13 +7,13 @@ export default function WorkSection({}) {
   return (
     <>
       <motion.div
-        className="border-1 overflow-hidden flex flex-col"
+        className="border-1 border-border overflow-hidden flex flex-col"
         initial={{ opacity: 0 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
+        <div className="flex justify-start align-center p-3 border-b-1 border-border flex-shrink-0">
           <h1 className="text-2xl font-bold">Professional Experience</h1>
         </div>
         <div className="flex flex-col p-2 overflow-y-auto flex-1 gap-1 overflow-x-hidden">

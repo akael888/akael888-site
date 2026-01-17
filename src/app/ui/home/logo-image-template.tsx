@@ -19,7 +19,7 @@ const LogoIMGTemplate: React.FC<LogoIMGTemplateProps> = ({
   return (
     <>
       <div className="group relative h-full w-full">
-        <div className="bg-gray-100 p-1 w-full h-full rounded-10 flex justify-center items-center">
+        <div className="bg-side-bg p-1 w-full h-full rounded-md flex justify-center items-center">
           <Image
             src={imgPath}
             alt={imgAlternative}
@@ -27,7 +27,7 @@ const LogoIMGTemplate: React.FC<LogoIMGTemplateProps> = ({
             height={imgHeight}
           />
         </div>
-        <div className="absolute hidden group-hover:block bg-black text-white p-1 top-10 left-1/2 -translate-x-1/2 w-max z-10">
+        <div className="absolute hidden group-hover:block bg-text text-bg p-1 top-10 left-1/2 -translate-x-1/2 w-max z-10">
           <span>{imgHoverText}</span>
         </div>
       </div>
