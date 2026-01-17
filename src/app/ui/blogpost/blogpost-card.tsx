@@ -61,7 +61,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
                 src={pinned ? pinnedImagePath : coverImagePath}
                 alt={`${title} Cover Image`}
                 fill
-                className="object-cover border-2 border-black"
+                className="object-cover border-2 border-black border-text"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -96,7 +96,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
             <div className="w-full h-full row-start-3 col-start-2 flex justify-end items-center">
               <Link
                 href={blogPath}
-                className="border-1 border-white hover:border-black h-fit w-fit flex items-center justify-end p-1 underline italic p-2"
+                className="border-1 border-bg hover:border-border h-fit w-fit flex items-center justify-end p-1 underline italic p-2"
               >
                 Read
               </Link>

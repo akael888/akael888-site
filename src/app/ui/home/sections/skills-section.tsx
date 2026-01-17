@@ -10,13 +10,13 @@ export default function SkillsSection({}) {
   return (
     <>
       <motion.div
-        className="border-1 h-full flex flex-col overflow-hidden"
+        className="border-1 border-border h-full flex flex-col overflow-hidden"
         initial={{ opacity: 0 }}
         transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
       >
-        <div className="flex justify-start items-center p-2 border-b-1 overflow-auto h-max">
+        <div className="flex justify-start items-center p-2 border-b-1 border-border  overflow-auto h-max">
           <h1 className="text-2xl font-bold">Skills</h1>
         </div>
         <div className="w-full grow shrink-0">

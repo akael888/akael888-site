@@ -18,10 +18,10 @@ export default function BlogSection({
         viewport={{ once: true }}
       >
         <div className=" h-fit">
-          <div className="flex justify-start align-center p-3 border-b-1 flex-shrink-0">
+          <div className="flex justify-start align-center p-3 border-b-1 border-border flex-shrink-0">
             <h1 className="text-2xl font-bold">Recent Post</h1>
           </div>
-          <div className="p-1 flex-row h-fit gap-2">
+          <div className="p-1 flex-row h-fit gap-2 ">
             {children}
           </div>
         </div>
