@@ -19,6 +19,14 @@ export default function ProjectSection({}) {
         </div>
         <div className="flex flex-col pl-2 pr-2 overflow-y-auto overflow-x-hidden flex-1 gap-2 pt-10 pb-10">
           <ProjectCard
+            name="ProPresenter Sim"
+            description="In Progress.."
+            // logoUrl="/efc-logo.png"
+            techStacks={[logoData.nextjs, logoData.tailwindcss]}
+            // appUrl="elgratiofc.vercel.app"
+            // blogUrl="/blog/personal-site"
+          />
+          <ProjectCard
             name="Personal Website"
             description="A Blogpost-style Personal Website that conveys how El developed his Projects"
             logoUrl="/efc-logo.png"
@@ -48,26 +56,6 @@ export default function ProjectSection({}) {
             appUrl="apps.apple.com/ph/app/pipers-pet-cafe-solitaire/id1554300372"
             blogUrl="/blog/pipers-pet-cafe"
           />
-          {/* <ProjectCard
-                name="Test"
-                description="Test123"
-                logoUrl="/linkedin-dark.svg"
-              />
-              <ProjectCard
-                name="Test"
-                description="Test123"
-                logoUrl="/linkedin-dark.svg"
-              />
-              <ProjectCard
-                name="Test"
-                description="Test123"
-                logoUrl="/linkedin-dark.svg"
-              />
-              <ProjectCard
-                name="Test"
-                description="Test123"
-                logoUrl="/linkedin-dark.svg"
-              /> */}
         </div>
       </motion.div>
     </>
