@@ -11,8 +11,8 @@ import WorkSection from "./ui/home/sections/work-section";
 
 export default function Home() {
   return (
-    <div className="bg-white h-fit text-black flex flex-col">
-      <div className="border-l-1 border-r-1  border-black bg-grey-100 h-full w-full">
+    <div className="bg-bg h-fit text-text flex flex-col">
+      <div className="border-l-1 border-r-1  border-border h-full w-full">
         <div className=" flex flex-col gap-4 h-full w-full p-2 overflow-auto">
           {/* CONTENT */}
           <HeroSection />

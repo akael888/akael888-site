@@ -31,9 +31,9 @@ export default async function Page({ params }: BlogPostProps) {
   );
 
   return (
-    <div className="min-h-screen h-fit border-1 border-black border-t-0 p-2">
-      <article className="h-full text-black p-1 border-1">
-        <div className="p-2 flex flex-row gap-2 border-b-1">
+    <div className="min-h-screen h-fit border-1 border-border border-t-0 p-2 bg-bg text-text">
+      <article className="h-full p-1 border-1 border-border">
+        <div className="p-2 flex flex-row gap-2 border-b-1 border-border">
           <div className="w-[70%]">
             <h1 className="text-2xl font-bold">{post.title}</h1>
             <p>{post.description}</p>
