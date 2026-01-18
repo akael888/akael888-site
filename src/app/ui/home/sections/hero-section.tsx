@@ -14,7 +14,7 @@ export default function HeroSection({}) {
       >
         <div className="flex  flex-col p-1 justify-start align-end p-5 h-full">
           <p className="text-start text-2xl font-bold">
-            An aspiring Full Stack Developer
+            A Full Stack Developer
           </p>
           <p className="italic text-xl">
             with 3+ years Experience in Game Development Industry
