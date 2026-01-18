@@ -3,17 +3,19 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 :root {
-  --bg: #ffffff;
-  --side-bg: #dcdcdc;
+  --bg: #eaeaea;
+  --side-bg: #ffffff;
   --text: #171717;
   --border: #000000;
+  --secondary: #d6d6d6;
 }
 
 [data-theme='dark'] {
-  --bg: #0a0a0a;
-  --side-bg: #636363;
+  --bg: #242424;
+  --side-bg: #1c1c1c;
   --text: #ededed;
-  --border: #333333;
+  --border: #626262;
+  --secondary: #717171;
 }
 
 @theme inline {
@@ -21,10 +23,11 @@
   --color-text: var(--text);
   --color-border: var(--border);
   --color-side-bg: var(--side-bg);
+  --color-secondary: var(--secondary);
 }
 
 body {
-  background: var(--bg);
+  background: var(--side-bg);
   color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
