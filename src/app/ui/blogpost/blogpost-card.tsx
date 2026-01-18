@@ -61,7 +61,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
                 src={pinned ? pinnedImagePath : coverImagePath}
                 alt={`${title} Cover Image`}
                 fill
-                className="object-cover border-2 border-black border-text"
+                className="object-cover border-2 border-black border-border"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
