@@ -19,7 +19,7 @@ const LogoIMGTemplate: React.FC<LogoIMGTemplateProps> = ({
   return (
     <>
       <div className="group relative h-full w-full">
-        <div className="bg-side-bg p-1 w-full h-full rounded-md flex justify-center items-center">
+        <div className="bg-secondary p-1 w-full h-full rounded-md flex justify-center items-center">
           <Image
             src={imgPath}
             alt={imgAlternative}
