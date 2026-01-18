@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function HeroSection({}) {
   return (
@@ -11,7 +12,7 @@ export default function HeroSection({}) {
         transition={{ ease: "easeIn", duration: 0.5 }}
         whileInView={{ opacity: 1 }}
       >
-        <div className="flex  flex-col p-1 justify-end align-end p-5">
+        <div className="flex  flex-col p-1 justify-start align-end p-5 h-full">
           <p className="text-start text-2xl font-bold">
             An aspiring Full Stack Developer
           </p>
