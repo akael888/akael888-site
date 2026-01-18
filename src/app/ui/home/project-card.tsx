@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       >
         <div className="grid grid-row-2 grid-cols-3 p-2">
           <div className=" row-span-2 flex justify-center items-center p-2 ">
-            <div className="w-fit border-1 border-border p-2">
+            <div className="w-fit border-1 border-border p-2 bg-white">
               <Image
                 src={logoUrl}
                 alt="Linkedin Logo"
@@ -70,7 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="flex flex-row md:justify-end justify-around items-center gap-2">
             {appUrl ? (
               <Link
-                className="border-1 min-w-[20%] p-1 hover:border-border border-bg justify-center items-center flex underline italic"
+                className="border-1 min-w-[20%] p-1 pr-2 hover:border-border border-bg justify-end items-center flex underline italic"
                 href={`https://${appUrl}`}
               >
                 App
@@ -78,7 +78,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ) : null}
             {blogUrl ? (
               <Link
-                className="border-1 min-w-[20%] p-1 hover:border-border border-bg justify-center items-center flex underline italic"
+                className="border-1 min-w-[20%] p-1 pr-2 hover:border-border border-bg justify-end items-center flex underline italic"
                 href={`${blogUrl}`}
               >
                 Blogpost
