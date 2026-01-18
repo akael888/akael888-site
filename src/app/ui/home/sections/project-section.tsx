@@ -18,14 +18,14 @@ export default function ProjectSection({}) {
           <h1 className="text-2xl font-bold">Projects</h1>
         </div>
         <div className="flex flex-col pl-2 pr-2 overflow-y-auto overflow-x-hidden flex-1 gap-2 pt-10 pb-10">
-          <ProjectCard
+          {/* <ProjectCard
             name="ProPresenter Sim"
             description="In Progress.."
             // logoUrl="/efc-logo.png"
             techStacks={[logoData.nextjs, logoData.tailwindcss]}
             // appUrl="elgratiofc.vercel.app"
             // blogUrl="/blog/personal-site"
-          />
+          /> */}
           <ProjectCard
             name="Personal Website"
             description="A Blogpost-style Personal Website that conveys how El developed his Projects"
