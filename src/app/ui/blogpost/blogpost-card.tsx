@@ -43,9 +43,9 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
         <div className="md:h-full h-fit md:grid md:grid-cols-3 md:grid-rows-2 flex flex-col w-full">
           <motion.div
             className="w-full md:h-full h-fit flex justify-center items-center row-span-2 p-2 col-span-2  "
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, x: -10 }}
             transition={{ ease: "easeIn", duration: 1 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
             <div
@@ -96,7 +96,7 @@ const BlogpostCard: React.FC<BlogpostCardProps> = ({
             <div className="w-full h-full row-start-3 col-start-2 flex justify-end items-center">
               <Link
                 href={blogPath}
-                className="border-1 border-bg hover:border-border h-fit w-fit flex items-center justify-end p-1 underline italic p-2"
+                className="border-1 border-bg hover:border-border h-fit w-full flex items-center justify-end p-1 underline italic p-2"
               >
                 Read
               </Link>
