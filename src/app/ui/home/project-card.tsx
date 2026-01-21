@@ -12,6 +12,7 @@ interface ProjectCardProps {
   techStacks: { imagePath: string; imageHoverText: string }[];
   appUrl?: string;
   blogUrl?: string;
+  githubUrl?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -21,6 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techStacks,
   appUrl,
   blogUrl,
+  githubUrl,
 }) => {
   return (
     <>
@@ -42,10 +44,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               />
             </div>
           </div>
-
-          <div className="col-span-2 flex justify-start items-center">
+          <div className="col-span-2 flex justify-start items-start flex-col">
             <h1 className="text-xl font-bold">{name}</h1>
           </div>
+
           <div className="col-span-2 flex justify-start items-center">
             {description}
           </div>
@@ -68,6 +70,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             ))}
           </div>
           <div className="flex flex-row md:justify-end justify-around items-center gap-2">
+            {githubUrl ? (
+              <Link
+                className="border-1 min-w-[20%] p-1 pr-2 hover:border-border border-bg justify-end items-center flex underline italic"
+                href={`https://${githubUrl}`}
+              >
+                Github
+              </Link>
+            ) : null}
             {appUrl ? (
               <Link
                 className="border-1 min-w-[20%] p-1 pr-2 hover:border-border border-bg justify-end items-center flex underline italic"
