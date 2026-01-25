@@ -6,7 +6,10 @@ export default function Footer() {
     <>
       <footer className="grid grid-cols-2 justify-start items-center p-5 h-[10%] bg-bg text-text border-border border-l-1 border-r-1 border-b-1 w-full">
         <div className="">
-          <p>© 2025 - Elgratio Latuihamallo</p>
+          <p>
+            © 2025 - Elgratio Latuihamallo - v
+            {process.env.NEXT_PUBLIC_APP_VERSION}
+          </p>
         </div>
 
         <div className="flex flex-row gap-2 justify-end items-center">
