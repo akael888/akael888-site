@@ -19,10 +19,16 @@ However there were slight friction when using it, whereas the user needs to sign
 
 Therefore I built this Tool, using:
 
-- **React Js (create-react-app)**
-- **Tailwindcss**
-- **Node and Express Js**
-- **MongoDB**
+- **React Js (create-react-app)** for Front End
+- **Tailwindcss** for Styling
+- **Node and Express Js** for BackEnd
+- **MongoDB** for Database
+
+With the help of.. 
+
+- Bruno and Postman for testing Endpoints
+- React Bootstrap for several UI components
+- Framer Motion for animations
 
 ### Features
 
@@ -31,6 +37,8 @@ The user are able to:
 - **Duplicate X amount of sentences**
 - **Define several variables within the sentence before duplicating**
 - **Adjust each variable's behaviour and rules when duplicated**
+- **Register an account and Login with credentials**
+- **Store Sentence and Variables within the Database, and Fetch the saved Sentence and Variables**
 
 ### Development
 
