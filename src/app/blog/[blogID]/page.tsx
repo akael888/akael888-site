@@ -40,7 +40,7 @@ export default async function Page({ params }: BlogPostProps) {
             <p>{post.description}</p>
           </div>
           <div className="w-[30%] flex flex-col justify-end items-end">
-            <p>{convertedDate}</p>
+            <p className="text-right" >{convertedDate}</p>
             <BlogPostTypeChip blogType={post.type} />
           </div>
         </div>
