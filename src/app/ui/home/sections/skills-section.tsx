@@ -5,8 +5,6 @@ import SkillCard from "../skill-card";
 import { logoData } from "@/app/lib/image-data";
 
 export default function SkillsSection({}) {
- 
-
   return (
     <>
       <motion.div
@@ -33,13 +31,18 @@ export default function SkillsSection({}) {
               skillTitle="Back End"
               skillLogoData={[logoData.nodejs, logoData.expressjs]}
             />
-            <SkillCard
-              skillTitle="Cloud"
-              skillLogoData={[logoData.vercel]}
-            />
+            <SkillCard skillTitle="Cloud" skillLogoData={[logoData.vercel]} />
             <SkillCard
               skillTitle="Databases"
               skillLogoData={[logoData.mongodb]}
+            />
+            <SkillCard
+              skillTitle="Game Development"
+              skillLogoData={[logoData.unity]}
+            />
+            <SkillCard
+              skillTitle="Others"
+              skillLogoData={[logoData.framerMotion]}
             />
           </div>
         </div>

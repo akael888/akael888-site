@@ -31,7 +31,11 @@ export default function ProjectSection({}) {
             name="Personal Website"
             description="A Blogpost-style Personal Website that conveys how El developed his Projects"
             logoUrl="/efc-logo.png"
-            techStacks={[logoData.nextjs, logoData.tailwindcss]}
+            techStacks={[
+              logoData.nextjs,
+              logoData.tailwindcss,
+              logoData.framerMotion,
+            ]}
             // appUrl="elgratiofc.vercel.app"
             blogUrl="/blog/personal-site"
             githubUrl="github.com/akael888/akael888-site"
@@ -46,6 +50,7 @@ export default function ProjectSection({}) {
               logoData.expressjs,
               logoData.tailwindcss,
               logoData.mongodb,
+              logoData.framerMotion,
             ]}
             appUrl="sentence-repeater.vercel.app"
             blogUrl="/blog/sentence-repeater"
