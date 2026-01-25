@@ -49,6 +49,11 @@ const logoData = {
     imageAlternative: "Tailwind Logo",
     imageHoverText: "Tailwind",
   },
+  framerMotion: {
+    imagePath: "/framer-motion.svg",
+    imageAlternative: "Framer Motion Logo",
+    imageHoverText: "F. Motion",
+  },
 };
 
 export { logoData };
