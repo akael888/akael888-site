@@ -26,9 +26,9 @@ Therefore I built this Tool, using:
 
 With the help of.. 
 
-- Bruno and Postman for testing Endpoints
-- React Bootstrap for several UI components
-- Framer Motion for animations
+- **Bruno** and **Postman** for testing Endpoints
+- **React Bootstrap** for several UI components
+- **Framer Motion** for animations
 
 ### Features
 
