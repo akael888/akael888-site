@@ -24,12 +24,14 @@ This is currently in development. Will update this on weekly basis.
 
 # Development Journey
 
-- v0.5.3 (18 May 2026)
+## v0.5.3 (18 May 2026)
+
 I finally got the time to update the Post. As for the recent update on v0.5.3 I added an Improvement to the Preview Page. You might be wondering, what the h3ll is a Preview Page??
 
 Well, let me walk throught the updates I've added since 18th of January 2026.
 
-- v0.1.4 (20 January 2026)
+## v0.1.4 (20 January 2026)
+
 I added basic and fundamental features to the App. Such as simple Text Area parser into a Slide Object and toggleable Option Menu where I can adjust the Slide Text Size and Alignment.
 
 The first problem I faced here was when I wanted to add Quick Navigation feature, where the user could simply click the slide and the text area will highlight the text corresponding to that slide.
