@@ -30,7 +30,7 @@ I finally got the time to update the Post. As for the recent update on v0.5.3 I 
 
 Well, let me walk throught the updates I've added since 18th of January 2026.
 
-## v0.1.4 (20 January 2026)
+## v0.1.4 (20 January 2026) - Fundamental Features
 
 I added basic and fundamental features to the App. Such as simple Text Area parser into a Slide Object and toggleable Option Menu where I can adjust the Slide Text Size and Alignment.
 
@@ -48,4 +48,20 @@ Now to highlight the text area, once the user pressed the Slide corresponding to
 
 Now after managed to get the substring, we then move on to focusing and set selection range the string in the Text Area based on the Index we got from adding both the substring and the Char Index!
 
+[Need to add details about Slide Quick Navigator through Text Area on this version.. TBA]
+
+## v0.1.5 (20 January 2026) - Display Option Revamp
+
+Added a button and simple toggling Option Menu
+
+## v0.1.6 (23 January 2026)
+
+Added new Text Attributes. Such as Text Stroke, Text Shadow, Text Font and Text Style (Currently only Bold style that is working on Text Style)
+And introduction to Text Attribute Controller Components. Such as Input Stepper, and Text Alignment Component
+
+## v0.1.7 (23 January 2026)
+
+Added new Text Attribute, the Text Container Width and Height
+
 [To Be Added - Latest 18 May 2026]
+[Recently Updated - 20 May 2026]
