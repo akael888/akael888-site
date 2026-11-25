@@ -1,5 +1,5 @@
 ---
-title: Designing Blogpost-style Personal Wesbite
+title: Designing Blogpost-style Personal Website
 description: An Attempt to Learn Next JS
 date: 2026-01-15T00:00:00.000Z
 author: Elgratio

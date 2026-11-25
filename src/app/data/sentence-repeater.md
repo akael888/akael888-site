@@ -12,7 +12,7 @@ pinned: true
 imgColPath: /blog-img/PJ01/image-col
 ---
 
-This project is based on a similar tool I've build using Coda.io
+This project is based on a similar tool I've built using Coda.io
 That said tool was used as a productivity tool during my employment in Tripledot Studios.
 
 However there were slight friction when using it, whereas the user needs to sign up to the host site (Coda.io)
@@ -32,7 +32,7 @@ With the help of..
 
 ### Features
 
-The user are able to:
+Users are able to:
 
 - **Duplicate X amount of sentences**
 - **Define several variables within the sentence before duplicating**
