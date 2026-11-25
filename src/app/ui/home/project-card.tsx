@@ -38,14 +38,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="w-fit border-1 border-border p-2 bg-white">
               <Image
                 src={logoUrl}
-                alt="Linkedin Logo"
+                alt={`${name} Logo`}
                 width={100}
                 height={100}
               />
             </div>
           </div>
-          <div className="col-span-2 flex justify-start items-start flex-col">
-            <h1 className="text-xl font-bold">{name}</h1>
+          <div className="col-span-2 flex justify-end items-start flex-col">
+            <h1 className="text-2xl font-bold">{name}</h1>
           </div>
 
           <div className="col-span-2 flex justify-start items-center">
