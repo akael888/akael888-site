@@ -54,6 +54,21 @@ const logoData = {
     imageAlternative: "Framer Motion Logo",
     imageHoverText: "F. Motion",
   },
+  postgreSQL: {
+    imagePath: "/postgresql-logo.webp",
+    imageAlternative: "PostgreSQL Logo",
+    imageHoverText: "PostgreSQL",
+  },
+  typescript: {
+    imagePath: "/typescript-logo.webp",
+    imageAlternative: "Typescript Logo",
+    imageHoverText: "Typescript",
+  },
+  jest: {
+    imagePath: "/jest-logo.svg",
+    imageAlternative: "Jest Logo",
+    imageHoverText: "Jest",
+  },
 };
 
 export { logoData };
