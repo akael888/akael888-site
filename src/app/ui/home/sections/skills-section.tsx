@@ -21,7 +21,11 @@ export default function SkillsSection({}) {
           <div className="w-full h-full p-2 flex gap-2 grid grid-cols-2 grid-rows-2 ">
             <SkillCard
               skillTitle="Language"
-              skillLogoData={[logoData.javascript, logoData.python]}
+              skillLogoData={[
+                logoData.javascript,
+                logoData.typescript,
+                logoData.python,
+              ]}
             />
             <SkillCard
               skillTitle="Front End"
@@ -34,12 +38,13 @@ export default function SkillsSection({}) {
             <SkillCard skillTitle="Cloud" skillLogoData={[logoData.vercel]} />
             <SkillCard
               skillTitle="Databases"
-              skillLogoData={[logoData.mongodb]}
+              skillLogoData={[logoData.mongodb, logoData.postgreSQL]}
             />
             <SkillCard
               skillTitle="Game Development"
               skillLogoData={[logoData.unity]}
             />
+            <SkillCard skillTitle="Testing" skillLogoData={[logoData.jest]} />
             <SkillCard
               skillTitle="Others"
               skillLogoData={[logoData.framerMotion]}

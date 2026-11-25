@@ -20,19 +20,26 @@ export default function ProjectSection({}) {
         <div className="flex flex-col pl-2 pr-2 overflow-y-auto overflow-x-hidden flex-1 gap-2 pt-10 pb-10">
           <ProjectCard
             name="ProPresenter Sim"
-            description="In Progress.."
-            // logoUrl="/efc-logo.png"
-            techStacks={[logoData.nextjs, logoData.tailwindcss]}
+            description="Turns plain text into ProPresenter-style slides for my church's worship team."
+            logoUrl="/blog-img/PJ04/PJ04-logo.png"
+            techStacks={[
+              logoData.nextjs,
+              logoData.tailwindcss,
+              logoData.postgreSQL,
+              logoData.typescript,
+              logoData.jest,
+            ]}
             githubUrl="github.com/akael888/propre-sim"
-            // appUrl="elgratiofc.vercel.app"
+            appUrl="propre-sim.vercel.app"
             blogUrl="/blog/propresenter-sim"
           />
           <ProjectCard
             name="Personal Website"
             description="A Blogpost-style Personal Website that conveys how El developed his Projects"
-            logoUrl="/efc-logo.png"
+            logoUrl="/blog-img/PJ02/PJ02-logo.png"
             techStacks={[
               logoData.nextjs,
+              logoData.typescript,
               logoData.tailwindcss,
               logoData.framerMotion,
             ]}
@@ -43,7 +50,7 @@ export default function ProjectSection({}) {
           <ProjectCard
             name="Sentence Repeater"
             description="A tool to help you duplicate a sentence with Variable Definition features. That allows you to duplicate a sentence with specific rules."
-            logoUrl="/sentence-rep-logo.png"
+            logoUrl="/blog-img/PJ01/PJ01-logo.png"
             techStacks={[
               logoData.reactjs,
               logoData.nodejs,
@@ -59,7 +66,7 @@ export default function ProjectSection({}) {
           <ProjectCard
             name="Piper's Pet Cafe"
             description="A casual mobile game that blends card-based solitaire puzzles with a unique cafe renovation theme."
-            logoUrl="/ppc-logo.png"
+            logoUrl="/blog-img/PJ03/PJ03-logo.png"
             techStacks={[logoData.unity]}
             appUrl="apps.apple.com/ph/app/pipers-pet-cafe-solitaire/id1554300372"
             blogUrl="/blog/pipers-pet-cafe"

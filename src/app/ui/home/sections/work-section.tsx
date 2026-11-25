@@ -18,6 +18,12 @@ export default function WorkSection({}) {
         </div>
         <div className="flex flex-col p-2 overflow-y-auto flex-1 gap-1 overflow-x-hidden">
           <WorkHistoryCard
+            role="Data Maintenance & Content Creation"
+            duration="Feb 2026 - Present"
+            company="Maluku Province Bank Indonesia Representative Office"
+            details="To be added.."
+          />
+          <WorkHistoryCard
             role="Project Coordinator"
             duration="Jul 2025 - Aug 2025"
             company="Script Smelter Studios"
